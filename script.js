@@ -9,7 +9,7 @@ const bandeira = document.querySelector(".bandeira-dolar")
 const nameCurrency = document.getElementById("currency-name")
 const nameCurrencyFrom = document.getElementById("currency-name-from")
 
-const converterMoeda = () => {
+const converterMoeda = async () => {
     /*Busca os dados do HTML
     input-que o usuário coloca o valor
     valor do real no final da página que consta na tela
@@ -18,6 +18,10 @@ const converterMoeda = () => {
     const RealValue = document.getElementById("real-value");
     const DolarValue = document.getElementById("dolar-value");
     
+    const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL").then(response => response.json())
+
+    const dolar = data.USDBRL.high
+    const euro = data.EURBRL.high
     console.log(nameCurrencyFrom.value)
 
     if(selectFrom.value === 'real'){
@@ -34,9 +38,9 @@ const converterMoeda = () => {
     }
 
     /*Defino o valor do dólar para que possamos
-    realizar a conta */
+    realizar a conta 
     const dolar = 4.85
-    const euro = 5.29
+    const euro = 5.29  */
     
 
     /* xxxxxxxxxxx VERIFICAÇÃO 'SELECT TO' 

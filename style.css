@@ -6,19 +6,23 @@
 }
 
 body {
-    background: #E5E5E5;
+    background: linear-gradient(#f3c073, #c2bdb6, #f3c073);
+    height: 100vh;
 }
 
 .container {
     width: 375px;
-    background-color: #F4F4F4;
+    background-color: #f4f4f4;
     margin: 0 auto;
     margin-top: 100px;
+    border-radius: 10px;
 }
 
 header {
-    background-color: #1B83E2;
+    background-color: #f3a93b;
     height: 66px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 h1 {
@@ -74,7 +78,7 @@ input {
 }
 
 button {
-    background: #1B83E2;
+    background: #f3a93b;
     border-radius: 25px;
     height: 48px;
     cursor: pointer;
@@ -99,7 +103,7 @@ button:active {
 }
 
 section {
-    border: 1px solid #1B83E2;
+    border: 1px solid #f3a93b;
     border-radius: 4px;
 }
 
@@ -123,7 +127,7 @@ section {
     font-size: 20px;
     line-height: 18px;
     align-items: center;
-    color: #1B83E2;
+    color: #d48309;
 }
 
 .arrow-img {
@@ -132,5 +136,6 @@ section {
 }
 
 .bandeira {
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
 }
